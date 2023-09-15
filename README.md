@@ -15,5 +15,8 @@ This is the demo repository for the final round of the Syft Hackathon. The repos
 3. **pnpm --filter web prod** - starts web in production mode ( Note: the prod commands servers from lib, hence it needs to build first ).
 
 ### Docker
-1. **docker build --target web -t ${TAG} ${CONTEXT} --push** - builds and pushes the 
+1. **docker build --target web -t ${TAG} ${CONTEXT} --push** - builds and pushes the web image to a docker repository.
+2. **docker build --target server -t ${TAG} ${CONTEXT} --push** - builds and pushes the server image to a docker repository.
+
+**HINT** There are some optimizations that will improve the build time and image size.
 
